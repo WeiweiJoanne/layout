@@ -1,0 +1,61 @@
+body {
+    line-height: 1.5
+}
+
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+section,
+footer {
+    width: 640px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 16px;
+}
+img {
+    display: block;
+}
+main {
+    div {
+        display: inline-block;
+        box-sizing: border-box;
+
+        &.left-side {
+            img {
+                margin-bottom: 24px;
+            }
+        }
+
+        &.artilce-area {
+            width: 288px;
+            margin: 0 20px;
+
+            article {
+                margin-bottom: 24px;
+            }
+
+            h2 {
+                font-size: 20px;
+                line-height: 1.2;
+            }
+
+
+        }
+
+    }
+
+    footer {
+        height: 120px;
+
+        p {
+            text-align: center;
+        }
+    }
+}

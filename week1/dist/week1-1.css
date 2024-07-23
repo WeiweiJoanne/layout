@@ -1,0 +1,50 @@
+body {
+  line-height: 1.5;
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+section,
+footer {
+  width: 640px;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 16px;
+}
+
+img {
+  display: block;
+}
+
+main div {
+  display: inline-block;
+  box-sizing: border-box;
+}
+main div.left-side img {
+  margin-bottom: 24px;
+}
+main div.artilce-area {
+  width: 288px;
+  margin: 0 20px;
+}
+main div.artilce-area article {
+  margin-bottom: 24px;
+}
+main div.artilce-area h2 {
+  font-size: 20px;
+  line-height: 1.2;
+}
+main footer {
+  height: 120px;
+}
+main footer p {
+  text-align: center;
+}
