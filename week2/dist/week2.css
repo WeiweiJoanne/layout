@@ -28,6 +28,14 @@ img {
   display: inline-block;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
 .justify-content-end {
   justify-content: flex-end;
 }
@@ -44,6 +52,26 @@ img {
   align-items: center;
 }
 
+.align-items-start {
+  align-items: flex-start;
+}
+
+.align-items-end {
+  align-items: flex-end;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.text-center {
+  text-align: center;
+}
+
 .text-white {
   color: #fff;
 }
@@ -52,16 +80,20 @@ img {
   text-align: right;
 }
 
-.h1, .h2 {
+h1, h2 {
   font-size: 64px;
 }
 
-.h3 {
+h3 {
   font-size: 20px;
 }
 
-.p {
+.p-24 {
   font-size: 24px;
+}
+
+.p-16 {
+  font-size: 16px;
 }
 
 .li, .a {
@@ -71,6 +103,24 @@ img {
 a {
   text-decoration: none;
   display: inline-block;
+}
+
+.border {
+  border: 1px solid #E3E3E3;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.button {
+  padding: 12px 24px;
+  border-radius: 32px;
+  font-size: 16px;
+}
+
+.bg-black {
+  background-color: #000;
 }
 
 .header {
@@ -87,12 +137,7 @@ section.banner {
 section.banner .txt-box {
   background-color: #000;
 }
-section.banner .txt-box > .d-flex button {
-  padding: 12px 24px;
-  border-radius: 32px;
-  font-size: 16px;
-}
-section.banner .h2 {
+section.banner h2 {
   font-size: 128px;
 }
 section.intro {
@@ -102,7 +147,7 @@ section.intro {
   background-size: cover;
   background-image: url(../images/bg.png);
 }
-section.intro > .container .d-flex {
+section.intro > .d-flex {
   gap: 24px;
 }
 section.intro .intro-box {
@@ -116,4 +161,53 @@ section.intro .intro-box .img-wrapper {
 }
 section.intro .intro-box ~ .img-wrapper {
   gap: 24px;
+}
+section.about-me {
+  padding: 160px 0;
+}
+section.about-me > .d-flex {
+  gap: 134px;
+}
+section.about-me .card-area {
+  width: 638px;
+}
+section.about-me .card-area .card {
+  width: 306px;
+  padding: 16px;
+}
+section.about-me .about-me-box {
+  width: 526px;
+}
+section.about-me .about-me-box h2 {
+  margin-bottom: 36px;
+}
+section.contact-me {
+  padding: 95px 0;
+  background: linear-gradient(#050014, #01021E);
+}
+section.contact-me > .d-flex {
+  gap: 113px;
+}
+section.contact-me .contact-me-txt {
+  width: 657px;
+}
+section.contact-me .contact-me-txt h2 {
+  white-space: nowrap;
+}
+section.contact-me .social-media {
+  width: 526px;
+  gap: 20px;
+}
+section.contact-me .social-media img:hover {
+  filter: drop-shadow(0 0 16px #9094FF);
+}
+section.projects {
+  padding: 150px 0;
+}
+section.projects .button-wrapper {
+  margin-top: auto;
+}
+
+footer {
+  padding: 40px 0;
 }
