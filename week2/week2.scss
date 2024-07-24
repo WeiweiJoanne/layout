@@ -1,18 +1,35 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body{
-    font-family: "Bruno Ace SC", "Microsoft JhengHei", serif;
+    font-family: "Bruno Ace SC", sans-serif;
     line-height: 1.5;
 
 }
+img{
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+}
 .container{
-    max-width: 1920px;
+    max-width: 1296px;
     margin: 0 auto;
 }
-.header{
-    background-color: #000;
-    padding: 52px 0;
-}
+
 .d-flex{
     display: flex;
+}
+.d-inline-block{
+    display: inline-block;
+}
+.justify-content-end{
+justify-content: flex-end;
+}
+.justify-content-center{
+    justify-content: center;
 }
 .justify-content-space-between{
     justify-content: space-between;
@@ -20,10 +37,81 @@ body{
 .align-items-center{
     align-items: center;
 }
+.text-white{
+    color: #fff
+}
+.text-right{
+    text-align: right;
+}
+
+.h1,.h2{
+    font-size: 64px;
+}
+.h3{
+    font-size: 20px;
+}
+.p{
+    font-size: 24px;
+}
+
+.li,.a{
+    font-size: 16px;
+}
+
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
 
 .header{
-    li{
+    background-color: #000;
+    padding: 40px 0;
+    li,a{
         color: #D1D1D1;
-        font-size: 16px;
+    }
+
+    
+}
+section{
+    &.banner{
+        background-color: #000;
+        .txt-box{
+            background-color: #000;
+            >.d-flex{
+                button{
+                    padding: 12px 24px;
+                    border-radius: 32px;
+                    font-size: 16px;
+                }
+            }
+        }
+        .h2{
+            font-size: 128px;
+        }
+
+    }
+    &.intro{
+        padding: 160px 0;
+        background-color: #000;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url(../images/bg.png);
+        >.container .d-flex{
+            gap: 24px;
+        }
+        .intro-box{
+            width: 526px;
+            p{
+                margin: 36px 0 32px;
+            }
+            .img-wrapper{
+                gap:15px
+            }
+            &~.img-wrapper{
+                gap: 24px;
+            }
+        }
     }
 }
