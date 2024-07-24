@@ -1,16 +1,77 @@
-@import "../../reset.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+@import "../../reset.css";
+@import "./variable";
+@import "./base";
 
-$bg-color: #FBF2F2;
-$black: #000000;
-$red:  #AA0601;
 
-body{
-    font-family: "Roboto","Noto Sans TC", sans-serif;
+header{
+    background-color: $red;
+   
+    .logo{
+        max-width: 80px;
+    }
+    nav{
+        margin-left: auto;
+        ul{
+            gap:64px;
+        }
+
+        a{
+            padding: 25px 0;
+        }
+    }
 }
-
-.container{
-    max-width: 1296px;
-    margin: 0 auto;
+section{
+    &.banner{
+        background-image: url(../images/home-header.png);
+        .container{
+            overflow: hidden;
+        }
+        .text-box {
+            margin: 296px 0 296px  auto;
+        }
+    }
+    &:not(.banner){
+        padding: 80px 0;
+    }
+    &:nth-of-type(2){
+        // padding: 80px 0;
+        .cards{
+            margin: 36px -24px 0;
+            .card{
+                padding: 0 24px;
+                width: 25%;
+                h3{
+                    margin: 27px auto 8px;
+                }
+                img{
+                    max-width: 83px;
+                    
+                }
+            }
+        }
+        
+    }
+    &:nth-of-type(3){
+        
+        .cards{
+            margin: 36px -24px 0;
+            .card{
+                padding: 0 24px;
+                width: 33.33%;
+                h3{
+                    margin: 8px auto 0;
+                }
+                img{
+                    max-width: 416px;
+                    
+                }
+            }
+        }
+        
+    }
+    &:nth-of-type(4){
+        background-image: url(../images/index-bg.png);
+    }
 }
