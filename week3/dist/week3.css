@@ -408,6 +408,11 @@ section:nth-of-type(3) .cards .card img {
     max-width: 336px;
   }
 }
+@media (max-width: 768px) {
+  section:nth-of-type(3) .cards .card img {
+    max-width: 348px;
+  }
+}
 section:nth-of-type(4) {
   background-image: url(../images/index-bg.png);
 }

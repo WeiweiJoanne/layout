@@ -149,6 +149,9 @@ section {
                     @include Large {
                         max-width: 336px;
                     }
+                    @include Middle {
+                        max-width: 348px;
+                    }
 
                 }
             }
