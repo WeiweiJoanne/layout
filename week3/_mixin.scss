@@ -10,8 +10,8 @@
     }
 }
 
-// @mixin Small {
-//     @media(max-width:576px) {
-//         @content;
-//     }
-// }
+@mixin Small {
+    @media(max-width:576px) {
+        @content;
+    }
+}

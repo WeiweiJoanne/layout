@@ -12,13 +12,21 @@ body{
     line-height: 1.5;
 }
 
+.nav-container{
+    max-width: 1320px; //原寬度是1296px,扣掉左右padding
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
 .container{
     max-width: 1320px; //原寬度是1296px,扣掉左右padding
     margin: 0 auto;
     padding: 0 12px;
-    @include Large{
+    @include Middle{
         max-width: 720px;
-
+    }
+    @include Small{
+        max-width: 372px;
     }
 }
 
@@ -146,6 +154,10 @@ a {
 }
 .fs-20 {
     font-size: 20px;
+    @include Small{
+        font-size: 16px;
+        
+    }
 }
 .fs-24 {
     font-size: 24px;
@@ -153,9 +165,14 @@ a {
 
 .fs-36 {
     font-size: 36px;
+  
 }
 .fs-48 {
     font-size: 48px;
+    @include Small{
+        font-size: 24px;
+        
+    }
 }
 
 .fs-64 {

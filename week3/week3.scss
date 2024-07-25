@@ -7,179 +7,271 @@
 @import "./base";
 
 
-header{
+header {
     background-color: $red;
-   
-    .logo{
-        max-width: 80px;
+    .nav-container{
+
+        @include Middle{
+            flex-wrap: wrap;
+           
+        }
     }
-    nav{
+
+    .logo {
+        max-width: 80px;
+        @include Middle{
+            padding: 12px 0;
+        }
+    }
+
+    nav {
         margin-left: auto;
-        ul{
-            gap:64px;
+        @include Middle{
+            width: 100%;
+            .d-flex{
+                flex-wrap: wrap;
+                margin: 0 -12px;
+                li{
+                    width: 50%;
+                    text-align: center;
+                    border: 1px solid #fff;
+                 a{
+                    padding: 12px 0;
+                 }
+                }
+            }
         }
 
-        a{
+        ul {
+            gap: 64px;
+            @include Middle{
+                gap: 0
+            }
+        }
+
+        a {
             padding: 25px 0;
         }
     }
 }
-section{
-    &.banner{
+
+section {
+    &.banner {
         background-image: url(../images/home-header.png);
-        .container{
+        
+        @include Middle{
+            background-image: url(../images/home-header-sm.png);
+
+        }
+        
+
+        .container {
             overflow: hidden;
-            padding: 0 -12px ;
         }
 
         .text-right {
             margin: 296px 0 296px auto;
+            @include Small{
+                .fs-36{
+                    font-size: 16px;
+                }
+                .fs-64{
+                    font-size: 24px;
+                }
+            }
         }
     }
-    &:not(.banner){
+
+    &:not(.banner) {
         padding: 80px 0;
     }
-    &:nth-of-type(2){
-        
-        .cards{
+
+    &:nth-of-type(2) {
+
+        .cards {
             margin: 36px -12px;
-            @include Large {
+
+            @include Middle {
                 flex-wrap: wrap;
             }
-            
-            .card{
+
+            .card {
                 padding: 0 12px;
                 width: 25%;
-                @include Large {
+
+                @include Middle {
                     width: 50%;
                     margin-bottom: 24px;
                 }
-                h3{
+
+                @include Small {
+                    width: 100%;
+                }
+
+                h3 {
                     margin: 27px auto 8px;
                 }
-                img{
+
+                img {
                     max-width: 83px;
-                    
+
                 }
             }
         }
-        
+
     }
-    &:nth-of-type(3){
-      
-        .cards{
+
+    &:nth-of-type(3) {
+
+        .cards {
             margin: 36px -12px;
+
             @include Large {
                 flex-wrap: wrap;
             }
-            .card{
+
+            .card {
                 padding: 0 12px;
                 width: 33.33%;
+
                 @include Large {
                     width: 100%;
                     margin-bottom: 24px;
                 }
-                h3{
+
+                h3 {
                     margin: 8px auto 0;
                 }
-                img{
+
+                img {
                     max-width: 416px;
+
                     @include Large {
                         max-width: 336px;
                     }
-                    
+
                 }
             }
         }
-        
+
     }
-    &:nth-of-type(4){
+
+    &:nth-of-type(4) {
         background-image: url(../images/index-bg.png);
-     
-        .cards{
+
+        .cards {
             margin: 36px auto;
-            @include Large {
+
+            @include Middle {
                 flex-wrap: wrap;
             }
-            .card{
+
+            .card {
                 width: 50%;
-                @include Large {
+
+                @include Middle {
                     width: 100%;
                     margin-bottom: 24px;
                 }
-                img{
+
+                img {
                     max-width: 648px;
-                    @include Large {
+
+                    @include Middle {
                         max-width: 696px;
                     }
                 }
             }
         }
     }
-    &:nth-of-type(5){
 
-        .cards{
+    &:nth-of-type(5) {
+
+        .cards {
             margin: 36px -12px;
-            @include Large {
+
+            @include Middle {
                 flex-wrap: wrap;
             }
-            .card{
+
+            .card {
                 padding: 0 12px;
                 width: 25%;
-                @include Large {
+
+                @include Middle {
                     width: 50%;
                     margin-bottom: 24px;
                 }
-                .d-flex{
+
+                @include Small {
+                    width: 100%;
+                }
+
+                .d-flex {
                     border: 1px solid #DEE2E6;
                 }
-                .custumer-intro{
+
+                .custumer-intro {
                     padding: 16px;
                 }
-                .date{
+
+                .date {
                     margin-top: 72px;
                 }
-                img{
+
+                img {
                     max-width: 306px;
-                    @include Large {
+
+                    @include Middle {
                         max-width: 336px;
+                    }
+
+                    @include Small {
+                        max-width: 348px;
                     }
                 }
             }
         }
     }
-    &.form-section{
-       .form-container{
-        max-width: 636px;
-        margin: 0 auto;
-        >p{
-            margin: 48px auto 24px;
+
+    &.form-section {
+        .form-container {
+            max-width: 660px;
+            padding: 0 12px;
+            margin: 0 auto;
+
+            >p {
+                margin: 48px auto 24px;
+            }
+
+            label {
+                display: block;
+            }
+
+            textarea {
+                max-width: 636px;
+            }
+
+            input[type=button] {
+                max-width: 416px;
+            }
         }
-        label{
-            display: block;
-        }
-        textarea{
-            max-width: 636px;
-        }
-        input[type=button]{
-            max-width: 416px;
-        }
-       }
     }
 }
-.footer{
+
+.footer {
     padding: 48px 0 32px;
-    
-    .row{
+
+    .row {
         margin: 0 -16px 45px -24px;
 
     }
-    .contact-info{
-        // padding-bottom: 45px;
-        // border-bottom: 1px solid #fff;
+
+    .contact-info {
         padding-left: 24px;
         padding-right: 16px;
-        &::after{
+
+        &::after {
             content: "";
             width: 100%;
             height: 1px;
@@ -187,25 +279,83 @@ section{
             display: block;
             margin: 32px 0;
         }
-    }
-    .policy{
-        margin:0 -32px 0 auto;
-       p{
-        
-       }
-       a{
-        padding: 0 24px;
-       }
+
+        svg {
+            width: 40px;
+            height: 40px;
+
+            @include Small {
+                width: 18px;
+                height: 18px;
+
+            }
+        }
+
+        @include Small {
+            margin-top: -24px;
+            p {
+                font-size: 16px;
+            }
+
+        }
+
+        &~.d-flex{
+            @include Small{
+                flex-wrap: wrap;
+                >p{
+                    width: 100%;
+                }
+            }
+        }
     }
 
-    .social-media-area{
+    .policy {
+        margin: 0 -32px 0 auto;
+        
+        @include Small {
+            margin: 0 ;
+            flex-wrap: wrap;
+            p {
+                width: 100%;
+                
+            }
+        }
+
+
+        a {
+            padding: 0 24px;
+            @include Small {
+                padding: 0 
+            }
+        }
+    }
+
+    @include Small {
+        nav ul {
+            display: none;
+        }
+    }
+
+    .social-media-area {
         margin-left: auto;
-        .social-media{
-            img{
+
+        .social-media {
+            @include Small {
+                a {
+                    padding: 0 8px;
+                }
+            }
+
+            img {
 
                 max-width: 48px;
-                @include Large {
+
+                @include Middle {
                     max-width: 40px;
+                }
+
+                @include Small {
+                    max-width: 24px
                 }
             }
 
