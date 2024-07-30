@@ -273,6 +273,10 @@ a {
   border: 1px solid #000;
 }
 
+.bd-bottom-1-white {
+  border-bottom: 1px solid #fff;
+}
+
 .w100 {
   width: 100%;
 }
@@ -340,6 +344,9 @@ section.banner .text-right {
   margin: 296px 0 296px auto;
 }
 @media (max-width: 576px) {
+  section.banner .text-right {
+    margin: 144px 0 144px auto;
+  }
   section.banner .text-right .fs-36 {
     font-size: 16px;
   }
@@ -504,73 +511,32 @@ section.form-section .form-container input[type=button] {
   max-width: 416px;
 }
 
-.footer {
+.footer .row {
   padding: 48px 0 32px;
 }
-.footer .row {
-  margin: 0 -16px 45px -24px;
+.footer .nav {
+  margin-left: -24px;
+  margin-bottom: 36px;
 }
-.footer .contact-info {
-  padding-left: 24px;
-  padding-right: 16px;
-}
-.footer .contact-info::after {
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: #fff;
-  display: block;
-  margin: 32px 0;
+@media (max-width: 768px) {
+  .footer .nav {
+    display: none;
+  }
 }
 .footer .contact-info svg {
   width: 40px;
   height: 40px;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .footer .contact-info svg {
     width: 18px;
     height: 18px;
   }
 }
-@media (max-width: 576px) {
-  .footer .contact-info {
-    margin-top: -24px;
-  }
+@media (max-width: 768px) {
   .footer .contact-info p {
     font-size: 16px;
-  }
-}
-@media (max-width: 576px) {
-  .footer .contact-info ~ .d-flex {
-    flex-wrap: wrap;
-  }
-  .footer .contact-info ~ .d-flex > p {
-    width: 100%;
-  }
-}
-.footer .policy {
-  margin: 0 -32px 0 auto;
-}
-@media (max-width: 576px) {
-  .footer .policy {
-    margin: 0;
-    flex-wrap: wrap;
-  }
-  .footer .policy p {
-    width: 100%;
-  }
-}
-.footer .policy a {
-  padding: 0 24px;
-}
-@media (max-width: 576px) {
-  .footer .policy a {
-    padding: 0;
-  }
-}
-@media (max-width: 576px) {
-  .footer nav ul {
-    display: none;
+    margin-left: 8px;
   }
 }
 .footer .social-media-area {
@@ -592,5 +558,33 @@ section.form-section .form-container input[type=button] {
 @media (max-width: 576px) {
   .footer .social-media-area .social-media img {
     max-width: 24px;
+  }
+}
+.footer .copyright {
+  padding: 32px 0;
+}
+@media (max-width: 768px) {
+  .footer .copyright {
+    flex-wrap: wrap;
+  }
+  .footer .copyright p, .footer .copyright .policy {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .footer .policy {
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  .footer .policy p {
+    width: 100%;
+  }
+}
+.footer .policy a {
+  padding: 0 24px;
+}
+@media (max-width: 768px) {
+  .footer .policy a {
+    padding: 0;
   }
 }

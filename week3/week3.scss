@@ -9,42 +9,49 @@
 
 header {
     background-color: $red;
-    .nav-container{
 
-        @include Middle{
+    .nav-container {
+
+        @include Middle {
             flex-wrap: wrap;
-           
+
         }
     }
 
     .logo {
         max-width: 80px;
-        @include Middle{
+
+        @include Middle {
             padding: 12px 0;
         }
     }
 
     nav {
         margin-left: auto;
-        @include Middle{
+
+        @include Middle {
             width: 100%;
-            .d-flex{
+
+            .d-flex {
                 flex-wrap: wrap;
                 margin: 0 -12px;
-                li{
+
+                li {
                     width: 50%;
                     text-align: center;
                     border: 1px solid #fff;
-                 a{
-                    padding: 12px 0;
-                 }
+
+                    a {
+                        padding: 12px 0;
+                    }
                 }
             }
         }
 
         ul {
             gap: 64px;
-            @include Middle{
+
+            @include Middle {
                 gap: 0
             }
         }
@@ -58,12 +65,12 @@ header {
 section {
     &.banner {
         background-image: url(../images/home-header.png);
-        
-        @include Middle{
+
+        @include Middle {
             background-image: url(../images/home-header-sm.png);
 
         }
-        
+
 
         .container {
             overflow: hidden;
@@ -71,11 +78,14 @@ section {
 
         .text-right {
             margin: 296px 0 296px auto;
-            @include Small{
-                .fs-36{
+            
+            @include Small {
+                margin: 144px 0 144px auto;
+                .fs-36 {
                     font-size: 16px;
                 }
-                .fs-64{
+
+                .fs-64 {
                     font-size: 24px;
                 }
             }
@@ -149,6 +159,7 @@ section {
                     @include Large {
                         max-width: 336px;
                     }
+
                     @include Middle {
                         max-width: 348px;
                     }
@@ -263,79 +274,50 @@ section {
 }
 
 .footer {
-    padding: 48px 0 32px;
+    // padding: 48px 0 32px;
 
     .row {
-        margin: 0 -16px 45px -24px;
+        padding: 48px 0 32px;
 
     }
 
-    .contact-info {
-        padding-left: 24px;
-        padding-right: 16px;
 
-        &::after {
-            content: "";
-            width: 100%;
-            height: 1px;
-            background-color: #fff;
-            display: block;
-            margin: 32px 0;
+
+    .nav {
+        margin-left: -24px;
+        margin-bottom: 36px;
+    }
+
+    @include Middle {
+        .nav {
+            display: none;
         }
+    }
+
+    .contact-info {
+        // padding-left: 24px;
+        // padding-right: 16px;
+
 
         svg {
             width: 40px;
             height: 40px;
 
-            @include Small {
+            @include Middle {
                 width: 18px;
                 height: 18px;
 
             }
         }
 
-        @include Small {
-            margin-top: -24px;
+        @include Middle {
+            // margin-top: -24px;
+
             p {
                 font-size: 16px;
+                margin-left: 8px;
             }
 
-        }
-
-        &~.d-flex{
-            @include Small{
-                flex-wrap: wrap;
-                >p{
-                    width: 100%;
-                }
-            }
-        }
-    }
-
-    .policy {
-        margin: 0 -32px 0 auto;
-        
-        @include Small {
-            margin: 0 ;
-            flex-wrap: wrap;
-            p {
-                width: 100%;
-                
-            }
-        }
-
-
-        a {
-            padding: 0 24px;
-            @include Small {
-                padding: 0 
-            }
-        }
-    }
-
-    @include Small {
-        nav ul {
-            display: none;
         }
     }
 
@@ -364,4 +346,140 @@ section {
 
         }
     }
+    .copyright{
+        padding: 32px 0;
+        @include Middle{
+            flex-wrap: wrap;
+            p,.policy {
+                width: 100%;
+
+            }
+        }
+    }
+
+    .policy {
+
+        @include Middle {
+            margin: 0;
+            flex-wrap: wrap;
+
+            p {
+                width: 100%;
+
+            }
+        }
+
+
+        a {
+            padding: 0 24px;
+
+            @include Middle {
+                padding: 0
+            }
+        }
+    }
 }
+
+// .footer {
+//     padding: 48px 0 32px;
+
+//     .row {
+//         margin: 0 -12px 45px -24px;
+
+//     }
+
+//     .contact-info {
+//         padding-left: 24px;
+//         padding-right: 16px;
+
+//         &::after {
+//             content: "";
+//             width: 100%;
+//             height: 1px;
+//             background-color: #fff;
+//             display: block;
+//             margin: 32px 0;
+//         }
+
+//         svg {
+//             width: 40px;
+//             height: 40px;
+
+//             @include Small {
+//                 width: 18px;
+//                 height: 18px;
+
+//             }
+//         }
+
+//         @include Small {
+//             margin-top: -24px;
+//             p {
+//                 font-size: 16px;
+//             }
+
+//         }
+
+//         &~.d-flex{
+//             @include Small{
+//                 flex-wrap: wrap;
+//                 >p{
+//                     width: 100%;
+//                 }
+//             }
+//         }
+//     }
+
+//     .policy {
+//         margin: 0 -32px 0 auto;
+
+//         @include Small {
+//             margin: 0 ;
+//             flex-wrap: wrap;
+//             p {
+//                 width: 100%;
+
+//             }
+//         }
+
+
+//         a {
+//             padding: 0 24px;
+//             @include Small {
+//                 padding: 0 
+//             }
+//         }
+//     }
+
+//     @include Small {
+//         nav ul {
+//             display: none;
+//         }
+//     }
+
+//     .social-media-area {
+//         margin-left: auto;
+
+//         .social-media {
+//             @include Small {
+//                 a {
+//                     padding: 0 8px;
+//                 }
+//             }
+
+//             img {
+
+//                 max-width: 48px;
+
+//                 @include Middle {
+//                     max-width: 40px;
+//                 }
+
+//                 @include Small {
+//                     max-width: 24px
+//                 }
+//             }
+
+//         }
+//     }
+// }
