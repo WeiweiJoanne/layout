@@ -315,7 +315,7 @@ a {
 }
 
 .bd-bottom-1-grey {
-  border-bottom: 1px solid #495057;
+  border-bottom: 1px solid #00000020;
 }
 
 .w100 {
@@ -394,8 +394,8 @@ header nav a {
 }
 .section .select {
   flex-basis: 304px;
-  color: #495057;
-  border: 1px solid #495057;
+  color: #00000020;
+  border: 1px solid #00000020;
   padding: 6px 12px;
 }
 @media (max-width: 576px) {
@@ -432,14 +432,14 @@ header nav a {
     width: 50%;
   }
   .section .card .content {
-    border: 1px solid #495057;
+    border: 1px solid #00000020;
   }
 }
 @media (max-width: 768px) {
   .section .card {
     flex-direction: column;
     gap: 0;
-    border: 1px solid #495057;
+    border: 1px solid #00000020;
   }
   .section .card img, .section .card .content {
     width: 100%;
