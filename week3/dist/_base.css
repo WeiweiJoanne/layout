@@ -20,16 +20,6 @@ body {
   margin: 0 auto;
   padding: 0 12px;
 }
-@media (max-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-@media (max-width: 576px) {
-  .container {
-    max-width: 372px;
-  }
-}
 
 .text-brown {
   color: #650300;
@@ -171,6 +161,11 @@ a {
 
 .fs-24 {
   font-size: 24px;
+}
+@media (max-width: 576px) {
+  .fs-24 {
+    font-size: 16px;
+  }
 }
 
 .fs-36 {

@@ -22,12 +22,12 @@ body{
     max-width: 1320px; //原寬度是1296px,扣掉左右padding
     margin: 0 auto;
     padding: 0 12px;
-    @include Middle{
-        max-width: 720px;
-    }
-    @include Small{
-        max-width: 372px;
-    }
+    // @include Middle{
+    //     max-width: 720px;
+    // }
+    // @include Small{
+    //     max-width: 372px;
+    // }
 }
 
 .text-brown{
@@ -161,6 +161,10 @@ a {
 }
 .fs-24 {
     font-size: 24px;
+    @include Small{
+        font-size: 16px;
+        
+    }
 }
 
 .fs-36 {

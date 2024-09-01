@@ -20,16 +20,6 @@ body {
   margin: 0 auto;
   padding: 0 12px;
 }
-@media (max-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-@media (max-width: 576px) {
-  .container {
-    max-width: 372px;
-  }
-}
 
 .text-brown {
   color: #650300;
@@ -118,6 +108,14 @@ textarea {
   flex-direction: column;
 }
 
+.gap-11 {
+  gap: 11px;
+}
+
+.gap-16 {
+  gap: 16px;
+}
+
 .gap-24 {
   gap: 24px;
 }
@@ -172,6 +170,11 @@ a {
 .fs-24 {
   font-size: 24px;
 }
+@media (max-width: 576px) {
+  .fs-24 {
+    font-size: 16px;
+  }
+}
 
 .fs-36 {
   font-size: 36px;
@@ -180,11 +183,6 @@ a {
 .fs-48 {
   font-size: 48px;
 }
-@media (max-width: 576px) {
-  .fs-48 {
-    font-size: 24px;
-  }
-}
 
 .fs-64 {
   font-size: 64px;
@@ -192,6 +190,14 @@ a {
 
 .mt-24 {
   margin-top: 24px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mt-96 {
+  margin-top: 96px;
 }
 
 .mr-24 {
@@ -206,12 +212,20 @@ a {
   margin-left: 20px;
 }
 
+.mb-8 {
+  margin-bottom: 8px;
+}
+
 .mb-16 {
   margin-bottom: 16px;
 }
 
 .mb-28 {
   margin-bottom: 28px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
 }
 
 .mb-45 {
@@ -224,6 +238,14 @@ a {
 
 .mb-48 {
   margin-bottom: 48px;
+}
+
+.mb-64 {
+  margin-bottom: 64px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
 }
 
 .pt-6 {
@@ -266,12 +288,31 @@ a {
   padding-right: 24px;
 }
 
+.py-8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.py-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.px-24 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .bd-1-black {
   border: 1px solid #000;
 }
 
 .bd-bottom-1-white {
   border-bottom: 1px solid #fff;
+}
+
+.bd-bottom-1-grey {
+  border-bottom: 1px solid #495057;
 }
 
 .w100 {

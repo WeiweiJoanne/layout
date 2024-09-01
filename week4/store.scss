@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+
+@import "../../reset.css";
+@import "./_variable";
+@import "./_mixin";
+@import "./_base";
+
+header {
+    background-color: $red;
+
+    .nav-container {
+
+        @include Middle {
+            flex-wrap: wrap;
+
+        }
+    }
+
+    .logo {
+        max-width: 80px;
+
+        @include Middle {
+            padding: 12px 0;
+        }
+    }
+
+    nav {
+        margin-left: auto;
+
+        @include Middle {
+            width: 100%;
+
+            .d-flex {
+                flex-wrap: wrap;
+                margin: 0 -12px;
+
+                li {
+                    width: 50%;
+                    text-align: center;
+                    border: 1px solid #fff;
+
+                    a {
+                        padding: 12px 0;
+                    }
+                }
+            }
+        }
+
+        ul {
+            gap: 64px;
+
+            @include Middle {
+                gap: 0
+            }
+        }
+
+        a {
+            padding: 25px 0;
+        }
+    }
+}
+
+.section {
+
+    .h1 {
+        position: relative;
+        display: flex;
+
+        @include Small {
+            font-size: 24px;
+        }
+
+        &::before {
+            content: '';
+            width: 8px;
+            height: 72px;
+            background: $red;
+            display: inline-block;
+            margin-right: 12px;
+
+            @include Small {
+                height: 36px;
+            }
+        }
+    }
+
+    .select{
+        flex-basis: 304px;
+        color: $grey;
+        border: 1px solid $grey;
+        padding: 6px 12px;
+        @include Small{
+            flex-basis: auto;
+        }
+    }
+    @include Large{
+
+        .item{
+            flex-direction: column;
+        }
+  
+    }
+
+    @include Small{
+        .select-wrapper{
+            flex-direction: column;
+            gap:8px
+        }
+       
+    }
+   
+    .card{
+        flex-basis: 526px;
+        border: 1px solid #00000020;
+        img{
+            object-fit: cover;
+        }
+        @include Large{
+            flex-direction: row;
+            flex-basis: auto;
+            gap:24px;
+            border:none;
+            img,.content{
+                width: 50%;
+            }
+            
+            .content{
+                border: 1px solid $grey
+            }
+        }
+          @include Middle{
+            flex-direction: column;
+            gap:0;
+            border:1px solid $grey;
+            img,.content{
+                width: 100%;
+            }
+            
+            .content{
+                border: none;
+            }
+        }
+        
+    }
+    .map{
+        background-color: #59dea2;
+        width: auto;
+        flex-basis: 746px;
+        @include Large{
+            flex-basis: 415px
+        }
+        @include Middle{
+            flex-basis: 208px
+        }
+    }
+
+   
+
+
+}
+
+.footer {
+    // padding: 48px 0 32px;
+
+    .row {
+        padding: 48px 0 32px;
+
+    }
+
+
+
+    .nav {
+        margin-left: -24px;
+        margin-bottom: 36px;
+    }
+
+    @include Middle {
+        .nav {
+            display: none;
+        }
+    }
+
+    .contact-info {
+        // padding-left: 24px;
+        // padding-right: 16px;
+
+
+        svg {
+            width: 40px;
+            height: 40px;
+
+            @include Middle {
+                width: 18px;
+                height: 18px;
+
+            }
+        }
+
+        @include Middle {
+            // margin-top: -24px;
+
+            p {
+                font-size: 16px;
+                margin-left: 8px;
+            }
+
+        }
+    }
+
+    .social-media-area {
+        margin-left: auto;
+
+        .social-media {
+            @include Small {
+                a {
+                    padding: 0 8px;
+                }
+            }
+
+            img {
+
+                max-width: 48px;
+
+                @include Middle {
+                    max-width: 40px;
+                }
+
+                @include Small {
+                    max-width: 24px
+                }
+            }
+
+        }
+    }
+
+    .copyright {
+        padding: 32px 0;
+
+        @include Middle {
+            flex-wrap: wrap;
+
+            p,
+            .policy {
+                width: 100%;
+
+            }
+        }
+    }
+
+    .policy {
+
+        @include Middle {
+            margin: 0;
+            flex-wrap: wrap;
+
+            p {
+                width: 100%;
+
+            }
+        }
+
+
+        a {
+            padding: 0 24px;
+
+            @include Middle {
+                padding: 0
+            }
+        }
+    }
+}
