@@ -394,8 +394,8 @@ header nav a {
 }
 .section .select {
   flex-basis: 304px;
-  color: #00000020;
-  border: 1px solid #00000020;
+  color: #495057;
+  border: 1px solid #495057;
   padding: 6px 12px;
 }
 @media (max-width: 576px) {

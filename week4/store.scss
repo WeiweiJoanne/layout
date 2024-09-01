@@ -88,8 +88,8 @@ header {
 
     .select{
         flex-basis: 304px;
-        color: $grey;
-        border: 1px solid $grey;
+        color: #495057;
+        border: 1px solid #495057;
         padding: 6px 12px;
         @include Small{
             flex-basis: auto;
