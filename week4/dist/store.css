@@ -458,7 +458,7 @@ header nav a {
     flex-basis: 415px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .section .map {
     flex-basis: 208px;
   }

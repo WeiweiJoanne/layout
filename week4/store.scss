@@ -151,7 +151,7 @@ header {
         @include Large{
             flex-basis: 415px
         }
-        @include Middle{
+        @include Small{
             flex-basis: 208px
         }
     }
